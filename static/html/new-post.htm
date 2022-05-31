@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+	<title>Posts</title>
+	<link rel="stylesheet" href="/static/css/master.css">
+	<link rel="stylesheet" href="/static/css/new-post.css">
+	<link rel="stylesheet" href="/static/css/input.css">
+</head>
+<body>
+	<div class="header">
+		Создание идеи
+	</div>
+	<form class="login" action="/createUser">
+		<h1>Регистрация</h1>
+		<label class="label" for="idea-name">Имя пользователя</label>
+		<input class="idea-name" id="idea-name" name="idea-name" type="text"></input>
+
+		<label class="label" for="tags">Электронная почта</label>
+		<input class="email" id="email" name="email" type="text"></input>
+
+		<label class="label" for="password">Пароль</label>
+		<input class="password" id="password" name="password" type="password"></input>
+
+		<input class="submit" type="submit" value="Зарегистрироваться"></input>
+		<a class="label" style="text-align: center;" href="/login">Уже есть аккаунт? Войти</a>
+	</form>
+</body>
+</html>
