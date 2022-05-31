@@ -13,7 +13,8 @@ body {
 	background-color : white ;
 	border-radius : 1rem ;
 	padding : 1rem ;
-	width : 30rem ;
+	min-width : 15rem ;
+	width : 30% ;
 }
 
 .login *:not(:first-child) {
@@ -24,25 +25,3 @@ body {
 	text-align : center ;
 }
 
-.login .label {
-	display : block ;
-}
-
-.login .email , .login .password , .login .user {
-	background-color : #f1faee ;
-	border-radius : 0.25rem ;
-	border : none ;
-	height : 1.75rem ;
-	width : 95% ;
-}
-
-.login .submit {
-	display : block ;
-	margin-right : auto ;
-	margin-left : auto ;
-	width : 10rem ; 
-	height : 2rem ; 
-	border-radius : 0.75rem;
-	background-color : #08549a ;
-	color : white ;
-}

@@ -1,0 +1,31 @@
+/* By j for t. */
+
+.label {
+	display : block ;
+}
+
+input:is([type="text"],[type="password"]){
+	display : block ;
+	background-color : #f1faee ;
+	border-radius : 0.25rem ;
+	border : none ;
+	height : 1.75rem ;
+	width : 100% ;
+}
+
+textarea.text {
+	background-color : #f1faee ;
+	border : none ;
+}
+
+input[type="submit"] {
+	display : block ;
+	margin-right : auto ;
+	margin-left : auto ;
+	min-width : 10rem ;
+	height : 2rem ;
+	border-radius : 0.75rem ;
+	background : #08549a ;
+	color : white ;
+}
+

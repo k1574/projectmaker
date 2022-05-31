@@ -7,22 +7,39 @@
 	<link rel="stylesheet" href="/static/css/input.css">
 </head>
 <body>
-	<div class="header">
+	<h1 class="header">
 		Создание идеи
-	</div>
-	<form class="login" action="/createUser">
-		<h1>Регистрация</h1>
-		<label class="label" for="idea-name">Имя пользователя</label>
-		<input class="idea-name" id="idea-name" name="idea-name" type="text"></input>
+	</h1>
+	<form class="new-post" action="/createUser">
+		<div class="left">
+			<label class="label" for="idea-name">
+				Название идеи
+			</label>
+			<input class="idea-name" id="idea-name" name="idea-name" type="text">
+			</input>
 
-		<label class="label" for="tags">Электронная почта</label>
-		<input class="email" id="email" name="email" type="text"></input>
+			<label class="label" for="tags">
+				Теги
+			</label>
+			<input class="tags" id="tags" name="tags" type="text"></input>
 
-		<label class="label" for="password">Пароль</label>
-		<input class="password" id="password" name="password" type="password"></input>
+			<label class="label" for="text">Описание</label>
+			<textarea class="text" id="text" name="text" >
+			</textarea>
+		</div>
 
-		<input class="submit" type="submit" value="Зарегистрироваться"></input>
-		<a class="label" style="text-align: center;" href="/login">Уже есть аккаунт? Войти</a>
+		<div class="right">
+			<a href="#">
+				<img class="add-img" src="/static/img/like-inactive.png">
+				</img>
+			</a>
+			<input
+				class="submit"
+				type="submit"
+				value="Сохранить и опубликовать"
+			>
+			</input>
+		</div>
 	</form>
 </body>
 </html>

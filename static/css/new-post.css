@@ -1,0 +1,41 @@
+/* by j for t */
+
+.header {
+	position : sticky ;
+	left : 0 ;
+	top : 0 ;
+	width : 100vw ;
+	height : 3rem ;
+	background : white ;
+	margin : 0 ;
+	text-align : center ;
+}
+
+.new-post {
+	/*width : 60% ;*/
+	display : flex ;
+	flex-wrap : wrap ;
+	flex-direction : row ;
+	justify-content : center ;
+	column-gap : 2rem ;
+	background : white ;
+	margin-top : 3rem ;
+	padding : 1rem ;
+	border-radius : 1rem ;
+}
+
+.new-post :is(.left, .right) {
+	display : flex ;
+	flex-direction : column ;
+	justify-content : space-between ;
+}
+
+.new-post .text {
+	min-width : 30rem ;
+	min-height : 30rem ;
+}
+
+.new-post .add-img {
+	width : 15rem ;
+	height : 15rem ;
+}

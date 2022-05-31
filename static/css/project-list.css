@@ -9,10 +9,15 @@
 	margin-right : auto ;*/
 }
 
+.post-holder .post > * {
+	margin : 1rem ;
+}
+
 .post-holder .post {
 	background-color : white ;
-	width : 15rem ;
-	height: 22.5rem ;
+	min-width : 23rem ;
+	max-width : 25rem ;
+	/*height: 22.5rem ;*/
 	margin : 1rem ;
 	flex-shrink : 0 ;
 	border-radius : 1rem;
@@ -41,7 +46,7 @@
 	display: block;
 }
 
-.post-holder .post .tag-holder .tag {
+.tag {
 	text-align : center ;
 	color : white ;
 	background-color : #47bcd4 ;
@@ -52,3 +57,54 @@
 	font-size : 0.8rem ;
 }
 
+.post-holder .post .info {
+	display : flex ;
+	flex-direction : row ;
+	justify-content : space-between ;
+	padding : 1rem ;
+}
+
+.post-holder .post .profile {
+	display : inline-flex ;
+	flex-direction : row ;
+}
+
+.post-holder .post .info .profile .text {
+	display : inline-flex;
+	flex-direction : column ;
+	justify-content : space-between ;
+	padding-left : 1rem ;
+	padding-right : 1rem ;
+}
+
+.post-holder .post .info :is(.like, .avatar) {
+	height : 3.5rem ;
+	width : 3.5rem ;
+	border-radius : 50% ;
+	display : inline ;
+}
+
+.popup {
+	display : flex;
+	flex-direction : column ;
+	justify-content : center ;
+	align-items : center ;
+	background-color : rgba(128, 128, 128, .5) ;
+	z-index : 99 ;
+	margin : auto ;
+	width : 100vw ;
+	height : 100vh ;
+	position : fixed
+}
+
+.popup .card {
+	width : 80% ;
+	background-color : white ;
+	display : flex ;
+	flex-direction : row ;
+	border-radius : 1rem ;
+}
+
+.popup .card .right {
+	padding : 1rem ;
+}
