@@ -1,0 +1,43 @@
+body{
+	background:#DFF2EA;
+	font-family: "Calibri";
+}
+
+.container{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%, -50%);
+	display:flex;
+	box-shadow: 0px 0px 5px 2px #BBBBFF;
+	width: 500px;
+	height: 250px;
+	background:#FFFFFF;
+	border-radius:5%;
+	align-items:center;
+	justify-content:space-evenly;
+	flex-direction:column;
+}
+
+.fields{
+	width:90%;
+}
+input{
+	width:100%;
+	background:#DFF2EA;
+	border:none;	
+	}
+	
+.title-text{
+	font-weight:bold;
+	font-size:24px;
+}
+
+button{
+	background:#3333EE;
+	color:#FFFFFF;
+	border:none;
+	border-radius:10%/30%;
+	width:35%;
+	height:10%;
+}

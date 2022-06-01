@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Page Title</title>
+<meta name="description" content="placeholder description">
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<header>
+<div class="head-side"><form><input type="text" name="user" class="user" placeholder="Имя пользователя"></form></div>
+<div class="head-middle"> Идеи проектов</div>
+<div class="head-side"><form><input type="text" name="search" class="search" placeholder="Поиск"></form></div>
+</header>
+<div class="content-container">
+	<div class="content-block">
+		<div class="block-image">
+		<img src="https://images.unsplash.com/photo-1600804340584-c7db2eacf0bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80">
+		</div>
+		<div class="block-tags">
+		<div class="post-tag">IT</div> <div class="post-tag">BLAH</div> <div class="post-tag">Random Tag idk</div>
+		</div>
+		<div class="block-header">
+			Название Название Название Название Название
+		</div>
+		<div class="block-text">
+		<p><a onclick="javascript:ShowHide('HiddenDiv')">read more</a></p>
+			<div class="mid" id="HiddenDiv" style="display: none;">
+			put the rest of the text here
+			</div>
+		</div>
+		
+		<div class="block-footer">
+			
+			<img class="user-avatar">
+			<div class="block-footer-column">
+			<div class="username">ivan ivanof ivan ivanof ivan ivanof ivan ivanof ivan ivanof ivan ivanof</div>
+			<div class="user-email">ivan@mail.ru</div>
+			</div>
+			<div class="like-button">
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="content-block">
+		<div class="block-image">
+		<img src="https://images.unsplash.com/photo-1600804340584-c7db2eacf0bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80">
+		</div>
+		<div class="block-tags">
+		<div class="post-tag">IT</div> <div class="post-tag">BLAH</div> <div class="post-tag">Random Tag idk</div>
+		</div>
+		<div class="block-header">
+			Название Название Название Название Название
+		</div>
+		<div class="block-text">
+		<p><a onclick="javascript:ShowHide('HiddenDiv')">read more</a></p>
+			<div class="mid" id="HiddenDiv" style="display: none;">
+			put the rest of the text here
+			</div>
+		</div>
+		
+		<div class="block-footer">
+			
+			<img class="user-avatar">
+			<div class="block-footer-column">
+			<div class="username">ivan ivanof ivan ivanof ivan ivanof ivan ivanof ivan ivanof ivan ivanof</div>
+			<div class="user-email">ivan@mail.ru</div>
+			</div>
+			<div class="like-button">
+			</div>
+			
+		</div>
+	</div>
+	
+	
+
+	
+</div>
+
+</body>
+<script type="text/javascript">// 
+
+function ShowHide(divId)
+{
+if(document.getElementById(divId).style.display == 'none')
+{
+document.getElementById(divId).style.display='block';
+}
+else
+{
+document.getElementById(divId).style.display = 'none';
+}
+}
+</script>
+
+</html>
+

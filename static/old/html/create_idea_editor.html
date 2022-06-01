@@ -1,0 +1,22 @@
+{{ define "create_idea_editor" }}
+<div class="container" id="EditorForm" style="background-color: darkgray; display: flex;
+    justify-content: center; gap: 5rem; 
+    margin-top: var(--topBottomElementMargin); 
+    margin-bottom: var(--topBottomElementMargin); 
+    padding-top: var(--topBottomElementMargin);
+    padding-bottom: var(--topBottomElementMargin);">
+    <div class="container">
+          <!--
+        <div class="container" style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+        <input type="submit" class="btn btn-primary" value="Сохранить и перейти к карточке"/>
+        </div>
+          -->
+      <div class="container" style="display: flex; justify-content: space-between;">
+        <textarea name="markdownInput" id="markdownInput" placeholder="Подробное описание" class="markdown"></textarea>
+        <div class="markdown" id="markdownPreview"></div>
+          <!--
+        <textarea placeholder="Подробное описание" name="markdown" id="markdown" class="markdown">{{.MarkdownIn}}</textarea>
+          -->
+      
+  </div>
+{{ end }}

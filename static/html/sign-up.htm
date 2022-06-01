@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<title>Posts</title>
+	<link rel="stylesheet" href="/static/css/master.css">
+	<link rel="stylesheet" href="/static/css/login.css">
+</head>
+<body>
+	<form class="login" action="/createUser">
+		<h1>Регистрация</h1>
+		<label class="label" for="user">Имя пользователя</label>
+		<input class="user" id="user" name="user" type="text"></input>
+
+		<label class="label" for="email">Электронная почта</label>
+		<input class="email" id="email" name="email" type="text"></input>
+
+		<label class="label" for="password">Пароль</label>
+		<input class="password" id="password" name="password" type="password"></input>
+
+		<input class="submit" type="submit" value="Зарегистрироваться"></input>
+		<a class="label" style="text-align: center;" href="/login">Уже есть аккаунт? Войти</a>
+	</form>
+</body>
+</html>

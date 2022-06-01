@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Page Title</title>
+<meta name="description" content="placeholder description">
+<link rel="stylesheet" type="text/css" href="./static/css/main.css">
+<link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
+</head>
+<body>
+<div class="container" style="background-color: darkgray; display: flex;
+    justify-content: center; gap: 5rem; 
+    margin-top: var(--topBottomElementMargin); 
+    margin-bottom: var(--topBottomElementMargin); 
+    padding-top: var(--topBottomElementMargin);
+    padding-bottom: var(--topBottomElementMargin);">
+    <div class="container">
+      <div class="container" style="display: flex; justify-content: space-between;">
+      <div id="markdownPreview">{{ . }}</div>
+  </div>
+</body>
+<script src="./static/js/remarkable.min.js"></script>
+<script src="./static/js/advanced.js"></script>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<title>Posts</title>
+	<link rel="stylesheet" href="/static/css/master.css">
+	<link rel="stylesheet" href="/static/css/top-bar.css">
+	<link rel="stylesheet" href="/static/css/project-list.css">
+</head>
+<body>
+	<header class="top-bar">
+		<div class="left">
+			<span class="username">{{ .UserName }}</span>
+			<img class="user-img" src="/static/img/user.png"></img>
+		</div>
+		<h1 class="center">Идеи проектов</h1>
+		<form class="right">
+				<img class="logo" src="/static/img/search.jpg"></img>
+				<input class="search" type="text" placeholder="Search...">
+		</form>
+	</header>
+	<div class="post-holder">
+		{{ range .IdeaCards }}
+		<div class="post">
+			<div class="logo-container">
+				<img class="logo" src="{{ .Preview }}"></img>
+			</div>
+			<div class="tag-holder">
+				{{ range .Tags}}
+				<span class="tag">{{ . }}</span>
+				{{ end }}
+			</div>
+			<h2 class="title">
+				{{ .Header}}
+			</h2>
+			<article class="desc">
+				{{ .Description}}
+			</article>
+		</div>
+		{{ end }}
+	</div>
+</body>
+</html>

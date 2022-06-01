@@ -1,0 +1,234 @@
+.head-side {
+
+	
+	width:30%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+
+	
+	}
+.head-middle {
+	
+	
+	width:40%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+
+
+	
+}
+header {
+	
+	text-align:center;
+	display:flex;
+	background: #FFFFFF;
+	height: 50px;
+	align-items:stretch;
+	justify-content:center;
+	align-content:center;
+
+	}
+
+img {
+	object-fit:contain;
+	height:100%;
+	width:100%;
+}
+
+
+
+
+
+.block-header{
+	
+
+	font-size:14px;
+	font-weight:bold;
+	text-align:left;
+	padding-left:5px;
+
+}
+
+
+
+
+
+body {
+	margin:0px;
+	background: #DFF2EA;
+	font-family: "Calibri";
+
+}
+
+input {
+	border-radius: 50px;
+	background: #DFF2EA;
+}
+.search input{
+	background-image: url(https://image.shutterstock.com/image-vector/loupe-magnifying-glass-search-icon-260nw-1269669289.jpg);
+	background-repeat: no-repeat;
+}
+
+
+
+.username {
+	color:#000000;
+	max-height:20px;
+	overflow:hidden; 	
+}
+
+.user-email {	
+	max-height:20px;
+	overflow:hidden;
+	}
+
+
+
+
+.body-container{
+	display:flex;
+}
+
+.side-bar{
+	width:30%;
+	margin:2%;
+
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:flex-end;
+}
+
+.profile-container{
+		
+	width:60%;
+	max-width:700px;
+	margin:2%;
+	text-align: center;
+	display:flex;
+	flex-flow: column wrap;
+	height:auto;
+	justify-content:space-evenly;
+	gap: 30px;
+
+}
+
+.profile-text{
+	display:flex;
+	flex-flow:column;
+	justify-content:space-around;
+	align-items:flex-start;
+	text-align:left;
+	font-weight:bold;
+
+}
+
+.content-block{
+	display:flex;
+	flex-flow:column;
+	justify-content:space-around;
+	align-items:stretch;
+		border-radius:10px;
+
+	text-align:left;
+	overflow:hidden;
+
+
+	box-shadow: 0px 0px 5px 2px #BBBBFF;
+	background: #FFFFFF;
+	
+}
+
+.profile-box{
+	border-radius:10px;
+	display:flex;
+	flex-flow: row;
+
+	overflow:hidden;
+
+
+	box-shadow: 0px 0px 5px 2px #BBBBFF;
+	background: #FFFFFF;
+}
+
+.profile-info{
+	display:flex;
+	flex-flow:column;
+}
+
+.profile-links{
+	display:flex;
+	flex-flow:column;
+}
+
+.user-avatar{
+	width:135px;
+	height:135px;
+	margin:15px;
+	border-radius:50%;
+	background:#55BFFF;
+}
+
+.content-container{
+	display:flex;
+	flex-flow:column;
+	width:100%;
+	gap: 30px;
+
+}
+
+
+.content-top{
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.content-middle{
+	border-top:3px solid #DFF2EA;
+	border-bottom:3px solid #DFF2EA;
+	padding-left:15px;
+	padding-right:15px;
+}
+.content-bottom{
+	padding-left:15px;
+	padding-right:15px;
+	padding-bottom:15px;
+}
+
+.side-block{
+	width:80%;
+	height:100px;
+	display:flex;
+	flex-flow:column;
+	justify-content:space-around;
+	align-items:stretch;
+		border-radius:10px;
+
+	text-align:left;
+	overflow:hidden;
+
+
+	box-shadow: 0px 0px 5px 2px #BBBBFF;
+	background: #FFFFFF;
+	
+}
+
+.side-top{
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.side-middle{
+	border-top:3px solid #DFF2EA;
+	border-bottom:3px solid #DFF2EA;
+	padding-left:5px;
+	padding-right:5px;
+	height:30%;
+}
+.side-bottom{
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:5px;
+}

@@ -1,0 +1,38 @@
+{{ define "create_idea_main" }}
+<div class="container" id="MainForm" style="background-color: darkgray; display: flex;
+    justify-content: center; gap: 5rem; 
+    margin-top: var(--topBottomElementMargin); 
+    margin-bottom: var(--topBottomElementMargin); 
+    padding-top: var(--topBottomElementMargin);
+    padding-bottom: var(--topBottomElementMargin);" id = "MainForm">
+      <div class="card" style="width: 25rem;">
+        <img class="card-img-top" width="250px" name="previewImg" id="previewImg" height="250px" src="./static/img/noimg.png">
+        <div class="card-body">
+        <p class="card-text" id="header" style="font-size: large;">Название проекта</p>
+        <p class="card-text" id="description" style="font-size: small;">Краткое описание проекта</p>
+        <div style="display:flex; justify-content: space-between;">
+            <a class="btn btn-primary">Подробнее</a>
+            <p class="card-text" style="font-size: small;">Автор:</p>
+        </div>
+        <p style="text-align: right;" id="author" class="card-text">Фамилия ИО</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container" style="display: flex;">
+        <div style="width: 25rem; height: 25rem; display: flex; justify-content: center;">
+          <input type="file" style="margin-top: 5rem;" name="logoUpload" id="logoUpload" accept="image/*" placeholder="Превью"/>
+        </div>
+          <div class="container" style="display:block">
+            <input type="text" name="headerInput" id="headerInput" placeholder="Название" required/><br>
+            <input type="text" name="descriptionInput" id="descriptionInput" placeholder="Краткое описание" required/><br>
+            <input type="text" name="authorInput" id="authorInput" placeholder="Автор" required/><br>
+          </div>
+          <!--
+        <textarea placeholder="Подробное описание" name="markdown" id="markdown" class="markdown">{{.MarkdownIn}}</textarea>
+          -->
+      </div>
+          <input type="submit" class="btn btn-primary" value="Добавить идею"/>
+          <a href="/" class="btn btn-primary">Назад</a>
+      </div>
+  </div>
+{{ end }}
